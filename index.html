@@ -1,0 +1,2428 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mother's Gift — A gift that quietly becomes ongoing care</title>
+<meta name="description" content="A sophisticated gift for a new mother. A physical gift arrives while a companion service quietly supports her recovery, her needs and her wellbeing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#F8F5F0',
+          paper2: '#F1EBE3',
+          paper3: '#EDE6DC',
+          ink: '#16130F',
+          ink2: '#3A342E',
+          muted: '#7A736A',
+          plum: '#4B2B45',
+          plum2: '#6E3F63',
+          plumsoft: '#EFE6EC',
+          moss: '#6E7A5A',
+          moss2: '#8B9873',
+          mossoft: '#EAEDE2',
+          clay: '#C9B7A4',
+          stone: '#DDD5CA'
+        },
+        fontFamily: {
+          serif: ['Fraunces', 'Georgia', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  :root{
+    --paper:#F8F5F0;
+    --paper2:#F1EBE3;
+    --ink:#16130F;
+    --ink2:#3A342E;
+    --muted:#7A736A;
+    --plum:#4B2B45;
+    --plum2:#6E3F63;
+    --moss:#6E7A5A;
+    --clay:#C9B7A4;
+    --stone:#DDD5CA;
+    --line:rgba(22,19,15,.12);
+    --line-soft:rgba(22,19,15,.07);
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Inter',system-ui,-apple-system,sans-serif;
+    --ease:cubic-bezier(.22,.8,.28,1);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-weight:400;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  body.lock{overflow:hidden;}
+
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:400;margin:0;}
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+  img{display:block;}
+
+  /* ---------- Typography scale ---------- */
+  .display-1{
+    font-family:var(--serif);
+    font-weight:300;
+    font-size:clamp(2.55rem,6.6vw,5.4rem);
+    line-height:1.01;
+    letter-spacing:-.025em;
+  }
+  .display-2{
+    font-family:var(--serif);
+    font-weight:300;
+    font-size:clamp(1.95rem,4.2vw,3.4rem);
+    line-height:1.05;
+    letter-spacing:-.022em;
+  }
+  .display-3{
+    font-family:var(--serif);
+    font-weight:400;
+    font-size:clamp(1.35rem,2.3vw,1.85rem);
+    line-height:1.16;
+    letter-spacing:-.015em;
+  }
+  .display-4{
+    font-family:var(--serif);
+    font-weight:400;
+    font-size:clamp(1.1rem,1.5vw,1.35rem);
+    line-height:1.25;
+    letter-spacing:-.01em;
+  }
+  .lede{
+    font-size:clamp(1rem,1.35vw,1.175rem);
+    line-height:1.62;
+    color:var(--ink2);
+    font-weight:300;
+  }
+  .body-sm{font-size:.9375rem;line-height:1.7;color:var(--muted);}
+  .eyebrow{
+    font-family:var(--sans);
+    font-size:.6875rem;
+    font-weight:500;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  .eyebrow-plum{color:var(--plum);}
+  .eyebrow-moss{color:var(--moss);}
+  .mono-note{
+    font-family:var(--serif);
+    font-style:italic;
+    font-weight:300;
+    letter-spacing:.005em;
+  }
+  .num{
+    font-family:var(--sans);
+    font-size:.6875rem;
+    font-weight:500;
+    letter-spacing:.2em;
+    color:var(--clay);
+  }
+
+  /* ---------- Layout ---------- */
+  .wrap{width:100%;max-width:1320px;margin:0 auto;padding:0 24px;}
+  @media(min-width:768px){.wrap{padding:0 40px;}}
+  @media(min-width:1280px){.wrap{padding:0 56px;}}
+  .sec{padding:76px 0;}
+  @media(min-width:768px){.sec{padding:104px 0;}}
+  @media(min-width:1280px){.sec{padding:136px 0;}}
+  .rule{height:1px;background:var(--line-soft);width:100%;}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    height:52px;padding:0 26px;
+    font-family:var(--sans);font-size:.8125rem;font-weight:500;
+    letter-spacing:.08em;text-transform:uppercase;
+    border:1px solid transparent;
+    transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease);
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--ink);color:var(--paper);}
+  .btn-primary:hover{background:var(--plum);transform:translateY(-1px);}
+  .btn-plum{background:var(--plum);color:#fff;}
+  .btn-plum:hover{background:#3A2036;transform:translateY(-1px);}
+  .btn-ghost{border-color:rgba(22,19,15,.22);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--ink);background:rgba(22,19,15,.04);}
+  .btn-light{border-color:rgba(255,255,255,.5);color:#fff;}
+  .btn-light:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+  .btn-sm{height:44px;padding:0 20px;font-size:.75rem;}
+  .btn:disabled{opacity:.35;cursor:not-allowed;transform:none;}
+  .link-u{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.8125rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+    border-bottom:1px solid var(--line);padding-bottom:4px;
+    transition:border-color .3s var(--ease),color .3s var(--ease);
+  }
+  .link-u:hover{border-color:var(--plum);color:var(--plum);}
+  .link-u svg{transition:transform .35s var(--ease);}
+  .link-u:hover svg{transform:translateX(4px);}
+
+  /* ---------- Header ---------- */
+  .site-header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    transition:background .45s var(--ease),border-color .45s var(--ease),backdrop-filter .45s var(--ease);
+    border-bottom:1px solid transparent;
+  }
+  .site-header .hg{
+    display:flex;align-items:center;justify-content:space-between;
+    height:76px;transition:height .45s var(--ease);
+  }
+  .site-header.solid{
+    background:rgba(248,245,240,.92);
+    backdrop-filter:blur(14px) saturate(140%);
+    border-bottom-color:var(--line-soft);
+  }
+  .site-header.solid .hg{height:64px;}
+  .brand{display:flex;align-items:center;gap:11px;color:#fff;transition:color .4s var(--ease);}
+  .site-header.solid .brand{color:var(--ink);}
+  .brand-mark{width:26px;height:26px;flex:none;transition:transform .5s var(--ease);}
+  .brand:hover .brand-mark{transform:rotate(-18deg);}
+  .brand-word{
+    font-family:var(--sans);font-size:.75rem;font-weight:500;
+    letter-spacing:.26em;text-transform:uppercase;line-height:1;
+  }
+  .brand-sub{
+    display:none;font-family:var(--serif);font-style:italic;font-size:.7rem;
+    letter-spacing:.02em;opacity:.65;margin-top:3px;
+  }
+  @media(min-width:480px){.brand-sub{display:block;}}
+  .nav-links{display:none;align-items:center;gap:34px;}
+  @media(min-width:1024px){.nav-links{display:flex;}}
+  .nav-links a{
+    font-size:.75rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;
+    color:rgba(255,255,255,.82);position:relative;padding:6px 0;
+    transition:color .3s var(--ease);
+  }
+  .site-header.solid .nav-links a{color:var(--ink2);}
+  .nav-links a::after{
+    content:'';position:absolute;left:0;bottom:0;height:1px;width:0;background:currentColor;
+    transition:width .4s var(--ease);
+  }
+  .nav-links a:hover::after{width:100%;}
+  .nav-links a:hover{color:#fff;}
+  .site-header.solid .nav-links a:hover{color:var(--plum);}
+  .hdr-cta{display:none;}
+  @media(min-width:1024px){.hdr-cta{display:inline-flex;}}
+  .site-header .btn-light{height:44px;padding:0 22px;font-size:.72rem;}
+  .site-header.solid .btn-light{background:var(--ink);border-color:var(--ink);color:var(--paper);}
+  .site-header.solid .btn-light:hover{background:var(--plum);border-color:var(--plum);}
+  .burger{display:flex;flex-direction:column;justify-content:center;gap:6px;width:40px;height:40px;align-items:flex-end;}
+  @media(min-width:1024px){.burger{display:none;}}
+  .burger span{display:block;height:1.5px;background:#fff;transition:all .35s var(--ease);}
+  .burger span:nth-child(1){width:24px;}
+  .burger span:nth-child(2){width:16px;}
+  .site-header.solid .burger span{background:var(--ink);}
+  .site-header.solid .burger:hover span:nth-child(2){width:24px;}
+
+  .mnav{
+    position:fixed;inset:0;z-index:59;background:var(--paper);
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 28px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease);
+  }
+  .mnav.open{opacity:1;pointer-events:auto;}
+  .mnav a{
+    font-family:var(--serif);font-size:2rem;font-weight:300;letter-spacing:-.02em;
+    padding:14px 0;border-bottom:1px solid var(--line-soft);
+    display:flex;align-items:baseline;gap:14px;
+  }
+  .mnav a i{font-family:var(--sans);font-style:normal;font-size:.6rem;letter-spacing:.18em;color:var(--clay);}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;min-height:660px;height:100svh;max-height:1000px;overflow:hidden;background:#241C1A;}
+  @media(min-width:768px){.hero{min-height:720px;}}
+  .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;animation:heroDrift 26s var(--ease) forwards;}
+  @keyframes heroDrift{from{transform:scale(1.08);}to{transform:scale(1);}}
+  .hero-scrim{
+    position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(18,14,12,.62) 0%,rgba(18,14,12,.18) 34%,rgba(18,14,12,.34) 62%,rgba(18,14,12,.86) 100%);
+  }
+  .hero-scrim-side{
+    position:absolute;inset:0;
+    background:linear-gradient(96deg,rgba(28,18,24,.62) 0%,rgba(28,18,24,.16) 46%,rgba(28,18,24,0) 74%);
+  }
+  .hero-grain{
+    position:absolute;inset:0;opacity:.16;mix-blend-mode:overlay;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+  }
+  .hero-inner{
+    position:relative;z-index:3;height:100%;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding-bottom:56px;padding-top:120px;
+  }
+  @media(min-width:1024px){.hero-inner{padding-bottom:72px;}}
+  .hero-copy{max-width:820px;}
+  .hero-eyebrow{color:rgba(255,255,255,.72);}
+  .hero h1{color:#fff;margin-top:20px;max-width:16ch;}
+  .hero-sub{color:rgba(255,255,255,.84);max-width:48ch;margin-top:24px;font-weight:300;}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;}
+  .hero-inset{
+    position:absolute;right:56px;bottom:96px;z-index:4;width:238px;
+    display:none;
+  }
+  @media(min-width:1280px){.hero-inset{display:block;}}
+  .hero-inset-frame{
+    border:1px solid rgba(255,255,255,.34);background:rgba(255,255,255,.06);
+    backdrop-filter:blur(6px);padding:9px;
+  }
+  .hero-inset img{width:100%;height:290px;object-fit:cover;}
+  .hero-inset-cap{
+    color:rgba(255,255,255,.82);font-family:var(--serif);font-style:italic;font-size:.78rem;
+    padding:11px 3px 2px;line-height:1.4;
+  }
+  .hero-foot{
+    position:relative;z-index:3;border-top:1px solid rgba(255,255,255,.18);
+    margin-top:52px;padding-top:20px;
+    display:flex;flex-wrap:wrap;gap:18px 40px;align-items:center;
+  }
+  .hero-foot span{
+    color:rgba(255,255,255,.62);font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+  }
+  .scroll-hint{
+    position:absolute;right:24px;bottom:56px;z-index:4;writing-mode:vertical-rl;
+    color:rgba(255,255,255,.6);font-size:.625rem;letter-spacing:.28em;text-transform:uppercase;
+    display:none;
+  }
+  @media(min-width:1280px){.scroll-hint{display:block;}}
+
+  /* ---------- Press strip ---------- */
+  .press{border-bottom:1px solid var(--line-soft);background:var(--paper);}
+  .press-row{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+    gap:14px 44px;padding:26px 0;
+  }
+  .press-row span{
+    font-family:var(--serif);font-size:.95rem;letter-spacing:.06em;color:var(--muted);
+    opacity:.82;
+  }
+  .press-row .lbl{font-family:var(--sans);font-size:.625rem;letter-spacing:.24em;text-transform:uppercase;color:var(--clay);opacity:1;}
+
+  /* ---------- Section headers ---------- */
+  .sec-head{display:grid;grid-template-columns:1fr;gap:22px;margin-bottom:52px;}
+  @media(min-width:900px){
+    .sec-head{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:60px;align-items:end;margin-bottom:72px;}
+  }
+  .sec-head-narrow{max-width:760px;}
+
+  /* ---------- How it works ---------- */
+  .how-grid{display:grid;grid-template-columns:1fr;gap:44px;}
+  @media(min-width:900px){.how-grid{grid-template-columns:repeat(3,1fr);gap:36px;}}
+  .how-item{display:flex;flex-direction:column;}
+  .how-img{position:relative;overflow:hidden;aspect-ratio:4/5;background:var(--paper3);}
+  .how-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease);}
+  .how-item:hover .how-img img{transform:scale(1.045);}
+  .how-img .tag{
+    position:absolute;top:14px;left:14px;background:rgba(248,245,240,.94);
+    padding:6px 11px;font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--plum);
+  }
+  .how-body{padding-top:22px;}
+  .how-body h3{margin-bottom:10px;}
+  .how-line{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .how-line .dash{flex:1;height:1px;background:var(--line-soft);}
+
+  /* ---------- Storyboard ---------- */
+  .storyboard{background:var(--ink);color:var(--paper);}
+  .sb-track{
+    display:grid;grid-auto-flow:column;grid-auto-columns:80%;gap:18px;
+    overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:18px;
+    scrollbar-width:none;
+  }
+  .sb-track::-webkit-scrollbar{display:none;}
+  @media(min-width:768px){.sb-track{grid-auto-columns:44%;}}
+  @media(min-width:1180px){
+    .sb-track{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(5,1fr);overflow:visible;gap:20px;}
+  }
+  .sb-frame{scroll-snap-align:start;display:flex;flex-direction:column;}
+  .sb-media{position:relative;overflow:hidden;aspect-ratio:3/4;background:#241C1A;}
+  .sb-media img{width:100%;height:100%;object-fit:cover;opacity:.72;filter:saturate(.82) contrast(1.04);transition:opacity .8s var(--ease),transform 1.2s var(--ease);}
+  .sb-frame:hover .sb-media img{opacity:.95;transform:scale(1.05);}
+  .sb-media::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(75,43,69,.30) 0%,rgba(20,16,15,.65) 100%);
+    mix-blend-mode:multiply;
+  }
+  .sb-time{
+    position:absolute;top:12px;left:12px;z-index:2;
+    font-size:.625rem;letter-spacing:.18em;color:rgba(248,245,240,.86);font-weight:500;
+  }
+  .sb-idx{
+    position:absolute;bottom:12px;right:14px;z-index:2;
+    font-family:var(--serif);font-size:1.5rem;font-weight:300;color:rgba(248,245,240,.34);
+  }
+  .sb-cap{padding-top:16px;}
+  .sb-cap h4{color:var(--paper);font-size:1.02rem;line-height:1.3;margin-bottom:8px;}
+  .sb-note{
+    font-family:var(--serif);font-style:italic;font-size:.82rem;color:rgba(248,245,240,.55);line-height:1.5;
+    border-left:1px solid rgba(248,245,240,.2);padding-left:12px;margin-top:10px;
+  }
+  .sb-legend{
+    display:flex;flex-wrap:wrap;gap:12px 30px;margin-top:44px;padding-top:24px;
+    border-top:1px solid rgba(248,245,240,.14);
+  }
+  .sb-legend div{display:flex;align-items:center;gap:10px;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(248,245,240,.6);}
+  .sb-dot{width:7px;height:7px;border-radius:50%;}
+
+  /* ---------- Data / control ---------- */
+  .data-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center;}
+  @media(min-width:1024px){.data-grid{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:84px;}}
+  .data-list{display:flex;flex-direction:column;gap:0;margin-top:38px;border-top:1px solid var(--line-soft);}
+  .data-list li{
+    list-style:none;display:flex;gap:18px;padding:24px 0;border-bottom:1px solid var(--line-soft);
+  }
+  .data-list .k{
+    font-family:var(--sans);font-size:.6875rem;letter-spacing:.2em;color:var(--clay);flex:none;width:34px;padding-top:4px;
+  }
+  .data-list h4{margin-bottom:6px;font-size:1.05rem;}
+  .panel{
+    background:var(--paper2);border:1px solid var(--line-soft);
+    padding:26px;
+  }
+  @media(min-width:768px){.panel{padding:34px;}}
+  .panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:22px;border-bottom:1px solid var(--line-soft);}
+  .panel-avatar{
+    width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none;border:1px solid var(--line);
+  }
+  .panel-avatar img{width:100%;height:100%;object-fit:cover;}
+  .share-row{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:17px 0;border-bottom:1px solid var(--line-soft);
+  }
+  .share-row:last-of-type{border-bottom:0;}
+  .share-row p{font-size:.9rem;color:var(--ink2);line-height:1.4;}
+  .share-row small{display:block;font-size:.75rem;color:var(--muted);margin-top:3px;}
+  .toggle{
+    position:relative;flex:none;height:28px;padding:0 12px;border:1px solid var(--line);
+    font-size:.625rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--muted);
+    background:transparent;transition:all .3s var(--ease);min-width:88px;text-align:center;
+  }
+  .toggle[data-on="true"]{background:var(--moss);border-color:var(--moss);color:#fff;}
+  .toggle[data-on="false"]{background:transparent;}
+  .toggle.paused[data-on="false"]{color:var(--plum);border-color:rgba(75,43,69,.35);}
+  .toggle:hover{transform:translateY(-1px);}
+  .panel-foot{
+    display:flex;align-items:center;gap:10px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line-soft);
+    font-size:.8125rem;color:var(--muted);
+  }
+  .pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--moss);flex:none;animation:pulse 2.4s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.82);}}
+
+  /* ---------- Care balance ---------- */
+  .care{background:var(--paper2);}
+  .care-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:700px){.care-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:1100px){
+    .care-grid{grid-template-columns:repeat(6,1fr);gap:20px;}
+    .care-a{grid-column:span 3;}
+    .care-b{grid-column:span 3;}
+    .care-c{grid-column:span 2;}
+    .care-d{grid-column:span 2;}
+    .care-e{grid-column:span 2;}
+  }
+  .care-card{
+    position:relative;overflow:hidden;background:var(--paper3);
+    display:flex;flex-direction:column;justify-content:flex-end;
+    min-height:280px;padding:26px;
+    transition:transform .5s var(--ease);
+  }
+  .care-card:hover{transform:translateY(-4px);}
+  .care-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease);}
+  .care-card:hover img{transform:scale(1.05);}
+  .care-card .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,15,.06) 30%,rgba(20,16,15,.78) 100%);}
+  .care-card .txt{position:relative;z-index:2;color:#fff;}
+  .care-card .txt h4{font-size:1.15rem;margin-bottom:6px;}
+  .care-card .txt p{font-size:.85rem;color:rgba(255,255,255,.76);line-height:1.5;max-width:30ch;}
+  .care-type{color:#fff;position:relative;z-index:2;}
+  .care-type h4{font-size:1.15rem;margin-bottom:8px;}
+  .care-type p{font-size:.85rem;line-height:1.55;max-width:28ch;opacity:.82;}
+  .care-type .ic{margin-bottom:22px;opacity:.8;}
+  .care-plum{background:var(--plum);}
+  .care-moss{background:var(--moss);}
+  .care-note{
+    display:flex;align-items:center;gap:14px;margin-top:40px;flex-wrap:wrap;
+  }
+  .care-note .dash{flex:1;min-width:40px;height:1px;background:var(--line);}
+  .care-note p{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--ink2);}
+
+  /* ---------- Packages ---------- */
+  .pkg-grid{display:grid;grid-template-columns:1fr;gap:20px;align-items:start;}
+  @media(min-width:900px){.pkg-grid{grid-template-columns:repeat(3,1fr);gap:22px;}}
+  .pkg{
+    border:1px solid var(--line);background:var(--paper);
+    padding:30px 26px;display:flex;flex-direction:column;
+    transition:border-color .4s var(--ease),background .4s var(--ease);
+  }
+  @media(min-width:768px){.pkg{padding:38px 32px;}}
+  .pkg:hover{border-color:rgba(22,19,15,.3);}
+  .pkg.featured{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .pkg.featured .pkg-sub,.pkg.featured .pkg-list li,.pkg.featured .feat-note{color:rgba(248,245,240,.72);}
+  .pkg.featured .pkg-price{color:#fff;}
+  .pkg.featured .pkg-toggle{border-color:rgba(248,245,240,.3);color:#fff;}
+  .pkg.featured .pkg-toggle:hover{background:rgba(248,245,240,.12);}
+  .pkg-badge{
+    display:inline-block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;
+    padding:5px 10px;background:var(--moss);color:#fff;margin-bottom:18px;align-self:flex-start;
+  }
+  .pkg h3{font-size:1.5rem;margin-bottom:8px;}
+  .pkg-sub{font-size:.875rem;color:var(--muted);line-height:1.55;min-height:44px;}
+  .pkg-price{
+    font-family:var(--serif);font-weight:300;font-size:1.65rem;letter-spacing:-.02em;margin:24px 0 4px;
+  }
+  .pkg-price small{font-family:var(--sans);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:block;margin-top:6px;}
+  .pkg.featured .pkg-price small{color:rgba(248,245,240,.55);}
+  .pkg-feats{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-direction:column;gap:11px;}
+  .pkg-feats li{display:flex;gap:11px;font-size:.875rem;line-height:1.5;color:var(--ink2);}
+  .pkg-feats li svg{flex:none;margin-top:5px;}
+  .expand{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease);}
+  .expand.open{grid-template-rows:1fr;}
+  .expand>div{overflow:hidden;}
+  .pkg-detail{padding-top:26px;margin-top:26px;border-top:1px solid var(--line-soft);}
+  .pkg.featured .pkg-detail{border-top-color:rgba(248,245,240,.16);}
+  .pkg-detail h5{
+    font-family:var(--sans);font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--clay);margin:0 0 14px;font-weight:500;
+  }
+  .pkg-list{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:10px;}
+  .pkg-list li{font-size:.875rem;line-height:1.55;color:var(--ink2);display:flex;gap:10px;}
+  .pkg-list li::before{content:'—';color:var(--clay);flex:none;}
+  .pkg.featured .pkg-list li{color:rgba(248,245,240,.72);}
+  .pkg-toggle{
+    margin-top:28px;height:48px;width:100%;
+    border:1px solid rgba(22,19,15,.2);color:var(--ink);
+    font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    transition:background .35s var(--ease),border-color .35s var(--ease);
+  }
+  .pkg-toggle:hover{background:rgba(22,19,15,.05);border-color:var(--ink);}
+  .pkg-toggle svg{transition:transform .45s var(--ease);}
+  .pkg-toggle[aria-expanded="true"] svg{transform:rotate(180deg);}
+  .feat-note{font-size:.75rem;color:var(--muted);margin-top:26px;line-height:1.6;}
+
+  /* ---------- First week teaser ---------- */
+  .fwk-teaser{
+    display:grid;grid-template-columns:1fr;gap:36px;align-items:center;
+    border:1px solid var(--line);background:var(--paper);
+  }
+  @media(min-width:900px){.fwk-teaser{grid-template-columns:1.05fr 1fr;gap:0;}}
+  .fwk-media{position:relative;aspect-ratio:16/11;overflow:hidden;}
+  @media(min-width:900px){.fwk-media{aspect-ratio:auto;height:100%;min-height:420px;}}
+  .fwk-media img{width:100%;height:100%;object-fit:cover;}
+  .fwk-body{padding:32px 26px 38px;}
+  @media(min-width:768px){.fwk-body{padding:56px 52px;}}
+  .fwk-cards{display:grid;grid-template-columns:1fr;gap:12px;margin-top:30px;}
+  @media(min-width:560px){.fwk-cards{grid-template-columns:1fr 1fr;}}
+  .fwk-mini{border-top:1px solid var(--line-soft);padding-top:14px;}
+  .fwk-mini h4{font-size:.98rem;margin-bottom:5px;}
+  .fwk-mini p{font-size:.8125rem;color:var(--muted);line-height:1.55;}
+
+  /* ---------- Trust ---------- */
+  .trust{background:var(--ink);color:var(--paper);}
+  .quote-grid{display:grid;grid-template-columns:1fr;gap:34px;}
+  @media(min-width:900px){.quote-grid{grid-template-columns:repeat(3,1fr);gap:44px;}}
+  .quote{border-top:1px solid rgba(248,245,240,.18);padding-top:26px;}
+  .quote p{font-family:var(--serif);font-weight:300;font-size:1.15rem;line-height:1.45;color:#fff;margin-bottom:20px;}
+  .quote .who{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(248,245,240,.5);}
+  .stat-row{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:28px 20px;
+    margin-top:64px;padding-top:44px;border-top:1px solid rgba(248,245,240,.14);
+  }
+  @media(min-width:768px){.stat-row{grid-template-columns:repeat(4,1fr);}}
+  .stat b{display:block;font-family:var(--serif);font-weight:300;font-size:2.1rem;letter-spacing:-.02em;color:#fff;line-height:1;}
+  .stat span{display:block;font-size:.75rem;color:rgba(248,245,240,.55);margin-top:10px;line-height:1.5;}
+
+  /* ---------- FAQ ---------- */
+  .faq-grid{display:grid;grid-template-columns:1fr;gap:36px;}
+  @media(min-width:1000px){.faq-grid{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:80px;}}
+  .faq-item{border-bottom:1px solid var(--line-soft);}
+  .faq-q{
+    width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;
+    padding:24px 0;text-align:left;
+    font-family:var(--serif);font-size:1.08rem;font-weight:400;line-height:1.35;
+    transition:color .3s var(--ease);
+  }
+  .faq-q:hover{color:var(--plum);}
+  .faq-q .pm{flex:none;width:20px;height:20px;position:relative;margin-top:5px;}
+  .faq-q .pm::before,.faq-q .pm::after{
+    content:'';position:absolute;background:var(--ink);transition:transform .4s var(--ease),opacity .3s var(--ease);
+  }
+  .faq-q .pm::before{left:0;top:9.5px;width:20px;height:1.2px;}
+  .faq-q .pm::after{left:9.5px;top:0;width:1.2px;height:20px;}
+  .faq-item.open .pm::after{transform:scaleY(0);opacity:0;}
+  .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease);}
+  .faq-item.open .faq-a{grid-template-rows:1fr;}
+  .faq-a>div{overflow:hidden;}
+  .faq-a p{font-size:.9375rem;line-height:1.72;color:var(--muted);padding:0 40px 26px 0;max-width:62ch;}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--paper2);}
+  .contact-grid{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);background:var(--paper);}
+  @media(min-width:1000px){.contact-grid{grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);}}
+  .contact-info{padding:34px 26px 40px;}
+  @media(min-width:768px){.contact-info{padding:56px 52px;}}
+  .contact-row{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line-soft);}
+  .contact-row:last-child{border-bottom:0;}
+  .contact-row .ic{flex:none;color:var(--plum);margin-top:3px;}
+  .contact-row h4{font-family:var(--sans);font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 7px;font-weight:500;}
+  .contact-row p,.contact-row a{font-size:.9375rem;color:var(--ink2);line-height:1.6;}
+  .contact-row a:hover{color:var(--plum);}
+  .map-wrap{position:relative;min-height:320px;background:var(--paper3);}
+  @media(min-width:1000px){.map-wrap{min-height:100%;}}
+  .map-wrap iframe{
+    position:absolute;inset:0;width:100%;height:100%;border:0;
+    filter:grayscale(1) contrast(1.03) sepia(.14) brightness(1.02);
+  }
+  .map-chip{
+    position:absolute;left:20px;bottom:20px;z-index:3;
+    background:rgba(248,245,240,.95);backdrop-filter:blur(8px);
+    border:1px solid var(--line);padding:12px 16px;max-width:260px;
+  }
+  .map-chip b{display:block;font-family:var(--serif);font-size:.98rem;font-weight:400;}
+  .map-chip span{font-size:.75rem;color:var(--muted);}
+
+  /* ---------- Footer ---------- */
+  .foot{background:var(--ink);color:var(--paper);padding:76px 0 34px;}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:44px;}
+  @media(min-width:768px){.foot-grid{grid-template-columns:1.4fr .8fr .8fr .8fr;gap:40px;}}
+  .foot h5{
+    font-family:var(--sans);font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;
+    color:rgba(248,245,240,.46);margin:0 0 18px;font-weight:500;
+  }
+  .foot ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;}
+  .foot ul a{font-size:.875rem;color:rgba(248,245,240,.74);transition:color .3s var(--ease);}
+  .foot ul a:hover{color:#fff;}
+  .foot-brand{display:flex;align-items:center;gap:12px;color:#fff;margin-bottom:18px;}
+  .foot-brand .brand-word{color:#fff;}
+  .foot p.sm{font-size:.875rem;color:rgba(248,245,240,.6);line-height:1.65;max-width:34ch;}
+  .nl{display:flex;border-bottom:1px solid rgba(248,245,240,.28);margin-top:20px;max-width:320px;}
+  .nl input{
+    flex:1;background:transparent;border:0;outline:none;color:#fff;
+    font-size:.875rem;padding:12px 0;font-family:var(--sans);
+  }
+  .nl input::placeholder{color:rgba(248,245,240,.4);}
+  .nl button{color:#fff;padding:12px 4px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;}
+  .nl button:hover{color:var(--clay);}
+  .foot-bottom{
+    margin-top:56px;padding-top:26px;border-top:1px solid rgba(248,245,240,.14);
+    display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;
+  }
+  .foot-bottom p,.foot-bottom a{font-size:.75rem;color:rgba(248,245,240,.48);letter-spacing:.04em;}
+  .foot-bottom a:hover{color:#fff;}
+  .foot-legal{display:flex;flex-wrap:wrap;gap:20px;}
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .95s var(--ease),transform .95s var(--ease);transition-delay:var(--d,0ms);}
+  .reveal.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition-duration:.01ms!important;}
+    .reveal{opacity:1;transform:none;}
+  }
+
+  /* ---------- Overlays (shared) ---------- */
+  .overlay{
+    position:fixed;inset:0;z-index:80;background:var(--paper);
+    opacity:0;pointer-events:none;transition:opacity .4s var(--ease);
+    overflow-y:auto;overscroll-behavior:contain;
+  }
+  .overlay.open{opacity:1;pointer-events:auto;}
+  .ov-bar{
+    position:sticky;top:0;z-index:20;
+    background:rgba(248,245,240,.94);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .ov-bar-in{display:flex;align-items:center;justify-content:space-between;height:68px;}
+  .ov-close{
+    display:flex;align-items:center;gap:10px;
+    font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--ink2);
+    transition:color .3s var(--ease);
+  }
+  .ov-close:hover{color:var(--plum);}
+  .ov-close svg{transition:transform .35s var(--ease);}
+  .ov-close:hover svg{transform:rotate(90deg);}
+
+  /* ---------- Flow ---------- */
+  .flow-layout{display:block;}
+  @media(min-width:1024px){
+    .flow-layout{display:grid;grid-template-columns:400px minmax(0,1fr);min-height:calc(100vh - 68px);}
+  }
+  .flow-aside{
+    display:none;background:var(--paper2);border-right:1px solid var(--line-soft);
+    padding:48px 40px;
+  }
+  @media(min-width:1024px){.flow-aside{display:block;}}
+  .flow-aside .sum{border-top:1px solid var(--line);margin-top:36px;padding-top:24px;}
+  .sum-row{display:flex;justify-content:space-between;gap:18px;padding:12px 0;font-size:.85rem;border-bottom:1px solid var(--line-soft);}
+  .sum-row span{color:var(--muted);flex:none;}
+  .sum-row b{font-weight:500;color:var(--ink);text-align:right;line-height:1.45;}
+  .flow-main{padding:34px 24px 80px;max-width:760px;}
+  @media(min-width:768px){.flow-main{padding:52px 56px 90px;}}
+  .prog{display:flex;align-items:center;gap:6px;margin-bottom:8px;}
+  .prog-dot{
+    flex:1;height:2px;background:var(--line);position:relative;transition:background .45s var(--ease);
+  }
+  .prog-dot.done,.prog-dot.current{background:var(--plum);}
+  .prog-labels{display:flex;justify-content:space-between;margin-bottom:38px;}
+  .prog-labels span{
+    font-size:.5625rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    flex:1;text-align:center;font-weight:500;
+  }
+  .prog-labels span:first-child{text-align:left;}
+  .prog-labels span:last-child{text-align:right;}
+  .prog-labels span.on{color:var(--plum);}
+
+  .flow-step{display:none;animation:fadeUp .5s var(--ease);}
+  .flow-step.active{display:block;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+
+  .field{margin-bottom:26px;}
+  .field label{display:block;font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--ink2);margin-bottom:10px;}
+  .field .hint{font-size:.8125rem;color:var(--muted);margin-bottom:12px;line-height:1.55;}
+  .inp,.sel,.area{
+    width:100%;background:transparent;border:1px solid var(--line);color:var(--ink);
+    font-family:var(--sans);font-size:1rem;padding:15px 16px;outline:none;
+    transition:border-color .3s var(--ease),background .3s var(--ease);
+    appearance:none;border-radius:0;
+  }
+  .inp:focus,.sel:focus,.area:focus{border-color:var(--plum);background:rgba(75,43,69,.025);}
+  .area{min-height:150px;resize:vertical;line-height:1.6;}
+  .sel{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A736A' stroke-width='1.3' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:42px;}
+  .inp.err{border-color:#A4553F;background:rgba(164,85,63,.05);}
+  .err-msg{font-size:.8125rem;color:#A4553F;margin-top:8px;display:none;}
+  .err-msg.show{display:block;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    border:1px solid var(--line);padding:10px 16px;font-size:.8125rem;color:var(--ink2);
+    transition:all .28s var(--ease);background:transparent;
+  }
+  .chip:hover{border-color:var(--ink);}
+  .chip.on{background:var(--ink);border-color:var(--ink);color:var(--paper);}
+  .chips-plum .chip.on{background:var(--plum);border-color:var(--plum);}
+  .counter{font-size:.75rem;color:var(--muted);text-align:right;margin-top:8px;}
+
+  .pkg-pick{display:grid;grid-template-columns:1fr;gap:12px;}
+  .pick{
+    border:1px solid var(--line);padding:20px;text-align:left;background:transparent;
+    display:flex;justify-content:space-between;gap:16px;align-items:flex-start;
+    transition:all .3s var(--ease);
+  }
+  .pick:hover{border-color:rgba(22,19,15,.3);}
+  .pick.on{border-color:var(--plum);background:rgba(75,43,69,.045);}
+  .pick h4{font-size:1.05rem;margin-bottom:5px;}
+  .pick p{font-size:.8125rem;color:var(--muted);line-height:1.5;}
+  .pick .pr{font-family:var(--serif);font-size:1.05rem;flex:none;}
+  .pick .radio{
+    width:15px;height:15px;border:1px solid var(--line);border-radius:50%;flex:none;margin-top:4px;
+    position:relative;transition:border-color .3s var(--ease);
+  }
+  .pick.on .radio{border-color:var(--plum);}
+  .pick.on .radio::after{
+    content:'';position:absolute;inset:3px;border-radius:50%;background:var(--plum);
+  }
+
+  .review-block{border:1px solid var(--line);margin-bottom:14px;}
+  .review-row{display:flex;justify-content:space-between;gap:20px;padding:18px 20px;border-bottom:1px solid var(--line-soft);align-items:flex-start;}
+  .review-row:last-child{border-bottom:0;}
+  .review-row .lbl2{font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500;flex:none;width:104px;padding-top:2px;}
+  .review-row .val{flex:1;font-size:.9375rem;color:var(--ink);line-height:1.55;}
+  .edit-btn{
+    font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase;color:var(--plum);
+    border-bottom:1px solid rgba(75,43,69,.3);padding-bottom:2px;flex:none;
+  }
+  .edit-btn:hover{border-color:var(--plum);}
+
+  .flow-nav{display:flex;justify-content:space-between;gap:14px;margin-top:38px;padding-top:28px;border-top:1px solid var(--line-soft);}
+  .flow-nav .btn{flex:1;}
+  @media(min-width:560px){.flow-nav .btn{flex:0 0 auto;}}
+
+  .confirm-mark{
+    width:64px;height:64px;border:1px solid var(--moss);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:var(--moss);margin-bottom:28px;
+  }
+  .next-steps{list-style:none;padding:0;margin:34px 0 0;border-top:1px solid var(--line-soft);}
+  .next-steps li{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line-soft);}
+  .next-steps .k{font-size:.6875rem;letter-spacing:.18em;color:var(--clay);flex:none;width:26px;padding-top:3px;}
+  .next-steps h4{font-size:1rem;margin-bottom:5px;}
+  .next-steps p{font-size:.85rem;color:var(--muted);line-height:1.6;}
+
+  /* ---------- FWK page ---------- */
+  .fwk-hero{position:relative;min-height:440px;height:62vh;max-height:660px;overflow:hidden;background:#241C1A;}
+  .fwk-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .fwk-hero .sc{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,15,.4) 0%,rgba(20,16,15,.78) 100%);}
+  .fwk-hero-in{position:relative;z-index:3;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:48px;color:#fff;}
+  .fwk-hero-in h1{color:#fff;max-width:18ch;}
+  .fwk-hero-in p{color:rgba(255,255,255,.82);max-width:52ch;margin-top:18px;font-weight:300;}
+  .fwk-body-wrap{padding:68px 0 96px;}
+  @media(min-width:768px){.fwk-body-wrap{padding:96px 0 120px;}}
+  .fwk-article{display:grid;grid-template-columns:1fr;gap:52px;}
+  @media(min-width:1024px){.fwk-article{grid-template-columns:minmax(0,.42fr) minmax(0,1fr);gap:80px;align-items:start;}}
+  .fwk-toc{position:sticky;top:100px;display:none;}
+  @media(min-width:1024px){.fwk-toc{display:block;}}
+  .fwk-toc h5{font-family:var(--sans);font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 16px;font-weight:500;}
+  .fwk-toc a{display:block;font-size:.875rem;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--line-soft);transition:color .3s var(--ease),padding-left .3s var(--ease);}
+  .fwk-toc a:hover{color:var(--plum);padding-left:6px;}
+  .fwk-block{margin-bottom:64px;scroll-margin-top:100px;}
+  .fwk-block h2{margin-bottom:20px;}
+  .fwk-block .lead{font-size:1.0625rem;line-height:1.72;color:var(--ink2);max-width:64ch;}
+  .fwk-block p{font-size:1rem;line-height:1.78;color:var(--muted);max-width:66ch;margin-top:16px;}
+  .fwk-cards2{display:grid;grid-template-columns:1fr;gap:18px;margin-top:32px;}
+  @media(min-width:640px){.fwk-cards2{grid-template-columns:1fr 1fr;}}
+  .fcard{border:1px solid var(--line);background:var(--paper);display:flex;flex-direction:column;transition:transform .45s var(--ease),border-color .4s var(--ease);}
+  .fcard:hover{transform:translateY(-3px);border-color:rgba(22,19,15,.26);}
+  .fcard .im{aspect-ratio:16/10;overflow:hidden;background:var(--paper3);}
+  .fcard .im img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease);}
+  .fcard:hover .im img{transform:scale(1.05);}
+  .fcard .bd{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column;}
+  .fcard .bd h4{font-size:1.08rem;margin-bottom:9px;}
+  .fcard .bd p{font-size:.875rem;color:var(--muted);line-height:1.65;margin:0;}
+  .fcard .tagline{margin-top:16px;font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;color:var(--plum);}
+  .pullquote{
+    border-left:2px solid var(--clay);padding:6px 0 6px 26px;margin:38px 0;
+    font-family:var(--serif);font-weight:300;font-size:1.4rem;line-height:1.42;letter-spacing:-.015em;color:var(--ink);
+    max-width:36ch;
+  }
+  .checklist{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:1fr;gap:12px;}
+  @media(min-width:640px){.checklist{grid-template-columns:1fr 1fr;}}
+  .checklist li{display:flex;gap:12px;font-size:.9rem;color:var(--ink2);line-height:1.6;padding:14px 16px;background:var(--paper2);border-left:2px solid var(--moss);}
+
+  @media(max-width:480px){
+    .hero-inner{padding-bottom:44px;}
+    .display-1{font-size:2.45rem;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="hdr">
+  <div class="wrap">
+    <div class="hg">
+      <a href="#top" class="brand" aria-label="Mother's Gift home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 4.2a11.8 11.8 0 0 0 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M16 4.2a11.8 11.8 0 0 1 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity=".32"/>
+          <circle cx="16" cy="16" r="3.1" fill="currentColor"/>
+        </svg>
+        <span>
+          <span class="brand-word">Mother's Gift</span>
+          <span class="brand-sub">a gift that keeps caring</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#control">Her control</a>
+        <a href="#care">Care balance</a>
+        <a href="#packages">Packages</a>
+        <a href="#faq">Questions</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:16px;">
+        <button class="btn btn-light hdr-cta" data-open-flow>Send the gift</button>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- mobile nav -->
+<div class="mnav" id="mnav">
+  <div>
+    <a href="#how" data-mnav><i>01</i>How it works</a>
+    <a href="#control" data-mnav><i>02</i>Her control</a>
+    <a href="#care" data-mnav><i>03</i>Care balance</a>
+    <a href="#packages" data-mnav><i>04</i>Packages</a>
+    <a href="#faq" data-mnav><i>05</i>Questions</a>
+    <a href="#contact" data-mnav><i>06</i>Contact</a>
+  </div>
+  <div style="margin-top:44px;display:flex;flex-direction:column;gap:12px;">
+    <button class="btn btn-plum" data-open-flow data-mnav>Begin the gift</button>
+    <button class="btn btn-ghost" data-open-fwk>Read the First Week Check</button>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <img class="hero-img"
+       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs6-VhRvO1oRADXxi6fFFqhQZPvZtbHsd3j0suW1RzEcRqN7JMwKksWDk&s=10?auto=format&fit=crop&w=2400&q=80"
+       alt="A new mother resting quietly with her newborn in soft, natural light">
+  <div class="hero-scrim"></div>
+  <div class="hero-scrim-side"></div>
+  <div class="hero-grain"></div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow hero-eyebrow">For the first forty days</p>
+      <h1 class="display-1">A gift that quietly becomes&nbsp;ongoing care.</h1>
+      <p class="lede hero-sub">Something beautiful arrives at her door. Then, over the weeks that follow, the small things are simply handled — without her having to ask, or explain, or be grateful twice.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" style="background:#F8F5F0;color:#16130F;" data-open-flow>Begin the gift</button>
+        <a href="#how" class="btn btn-light">See how it works</a>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <span>One recipient</span>
+      <span>Changeable for 12 months</span>
+      <span>She controls everything shared</span>
+      <span>Delivered in 48 hours</span>
+    </div>
+  </div>
+
+  <div class="hero-inset">
+    <div class="hero-inset-frame">
+      <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=900&q=80"
+           alt="A mother holding her child close in a calm room">
+      <p class="hero-inset-cap">The gift arrives. The care keeps arriving.</p>
+    </div>
+  </div>
+
+  <span class="scroll-hint">Scroll</span>
+</section>
+
+<!-- ============ PRESS ============ -->
+<div class="press">
+  <div class="wrap">
+    <div class="press-row">
+      <span class="lbl">As featured in</span>
+      <span>Vogue</span>
+      <span>Kinfolk</span>
+      <span>The Times</span>
+      <span>Monocle</span>
+      <span>Mother &amp; Country</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-plum">How it works</p>
+        <h2 class="display-2" style="margin-top:18px;">Three gestures. One long, quiet thread.</h2>
+      </div>
+      <div class="reveal" style="--d:120ms">
+        <p class="lede">You send one thing. Behind it, a small team keeps working — quietly, respectfully, and entirely on her terms — for as long as she wants us.</p>
+      </div>
+    </div>
+
+    <div class="how-grid">
+      <article class="how-item reveal">
+        <div class="how-img">
+          <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1200&q=80"
+               alt="A carefully wrapped gift parcel with ribbon on a neutral surface">
+          <span class="tag">01 — The gift</span>
+        </div>
+        <div class="how-body">
+          <div class="how-line"><span class="num">THE GIFT</span><span class="dash"></span></div>
+          <h3 class="display-3">Something tangible, chosen with care.</h3>
+          <p class="body-sm">A considered object — linen, ceramic, a scent she'll remember. It arrives beautifully wrapped with your message, and never mentions logistics, forms, or obligation.</p>
+        </div>
+      </article>
+
+      <article class="how-item reveal" style="--d:120ms">
+        <div class="how-img">
+          <img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt01c6e0ba09b9fe5e/667084975e1f711829088f02/ideas-for-mothers-day-gifts-hero.jpg?auto=format&fit=crop&w=1200&q=80"
+               alt="Two hands resting together, gentle and supportive">
+          <span class="tag">02 — The arrival</span>
+        </div>
+        <div class="how-body">
+          <div class="how-line"><span class="num">THE ARRIVAL</span><span class="dash"></span></div>
+          <h3 class="display-3">Then a person, quietly, on her side.</h3>
+          <p class="body-sm">Within a day, a care coordinator introduces herself. No calls unless she wants them. Meals, hands, sleep, laundry — offered before she thinks to ask.</p>
+        </div>
+      </article>
+
+      <article class="how-item reveal" style="--d:240ms">
+        <div class="how-img">
+          <img src="https://resize.indiatvnews.com/en/resize/gallery/1200_-/2026/05/gifts-for-mother-s-day-1778078126.jpg?auto=format&fit=crop&w=1200&q=80"
+               alt="A woman resting calmly by a window in soft daylight">
+          <span class="tag">03 — The after</span>
+        </div>
+        <div class="how-body">
+          <div class="how-line"><span class="num">THE AFTER</span><span class="dash"></span></div>
+          <h3 class="display-3">Care that adapts as she changes.</h3>
+          <p class="body-sm">Week three looks nothing like week one. What arrives shifts with her recovery, her sleep, her mood — because she tells us, or because she chooses to tell us nothing at all.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORYBOARD ============ -->
+<section class="sec storyboard">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:52px;">
+      <div class="reveal">
+        <p class="eyebrow" style="color:rgba(248,245,240,.55);">Hero animation storyboard</p>
+        <h2 class="display-2" style="color:#fff;margin-top:18px;">The first hour, frame by frame.</h2>
+      </div>
+      <div class="reveal" style="--d:120ms">
+        <p class="lede" style="color:rgba(248,245,240,.7);">The opening sequence of the experience: a message arrives, small needs resolve around her, and the emotional weight lifts.</p>
+      </div>
+    </div>
+
+    <div class="sb-track reveal">
+      <figure class="sb-frame" style="margin:0;">
+        <div class="sb-media">
+          <img src="https://i.etsystatic.com/5123103/r/il/64ec11/7691853454/il_1080xN.7691853454_artw.jpg?auto=format&fit=crop&w=900&q=80" alt="A warm cup resting on a table at dusk">
+          <span class="sb-time">19:04</span>
+          <span class="sb-idx">01</span>
+        </div>
+        <div class="sb-cap">
+          <h4>A message arrives.</h4>
+          <p class="sb-note">Slow fade up. Type settles letter by letter. No notification sound.</p>
+        </div>
+      </figure>
+
+      <figure class="sb-frame" style="margin:0;">
+        <div class="sb-media">
+          <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=900&q=80" alt="Objects arranged quietly on a wooden table">
+          <span class="sb-time">19:06</span>
+          <span class="sb-idx">02</span>
+        </div>
+        <div class="sb-cap">
+          <h4>She doesn't have to answer.</h4>
+          <p class="sb-note">A single soft pulse on the "rest" affordance. Everything else stays perfectly still.</p>
+        </div>
+      </figure>
+
+      <figure class="sb-frame" style="margin:0;">
+        <div class="sb-media">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80" alt="A prepared meal on a table">
+          <span class="sb-time">22:40</span>
+          <span class="sb-idx">03</span>
+        </div>
+        <div class="sb-cap">
+          <h4>Dinner is already handled.</h4>
+          <p class="sb-note">Three small need-cards drift in from the right, then dissolve as they resolve.</p>
+        </div>
+      </figure>
+
+      <figure class="sb-frame" style="margin:0;">
+        <div class="sb-media">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUvTkIZGh7NkO4r0DRb4jeyQTjZ1kd-ZiM5_9y9VyK3i-U8kj_549ihV8&s=10?auto=format&fit=crop&w=900&q=80" alt="A calm interior at night">
+          <span class="sb-time">02:15</span>
+          <span class="sb-idx">04</span>
+        </div>
+        <div class="sb-cap">
+          <h4>Someone else takes the 3am.</h4>
+          <p class="sb-note">Screen dims to a warm near-black. A slow horizontal light sweep marks the hour passing.</p>
+        </div>
+      </figure>
+
+      <figure class="sb-frame" style="margin:0;">
+        <div class="sb-media">
+          <img src="https://bodydesignsbymary.com/wp-content/uploads/2025/03/ec3198f8-e987-4b46-a88e-1640e0e8ebdb-1.png?auto=format&fit=crop&w=900&q=80" alt="A sunlit living room in the morning">
+          <span class="sb-time">08:30</span>
+          <span class="sb-idx">05</span>
+        </div>
+        <div class="sb-cap">
+          <h4>The weight is lighter.</h4>
+          <p class="sb-note">The frame opens. Shoulders drop one pixel. Timeline exhales into the next chapter.</p>
+        </div>
+      </figure>
+    </div>
+
+    <div class="sb-legend reveal">
+      <div><span class="sb-dot" style="background:#8B9873;"></span>Dissolve 800ms</div>
+      <div><span class="sb-dot" style="background:#6E3F63;"></span>Ease — cubic (.22,.8,.28,1)</div>
+      <div><span class="sb-dot" style="background:#C9B7A4;"></span>No bounce, no overshoot</div>
+      <div><span class="sb-dot" style="background:rgba(248,245,240,.5);"></span>Reduced-motion: static stills</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DATA / HER CONTROL ============ -->
+<section class="sec" id="control">
+  <div class="wrap">
+    <div class="data-grid">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-moss">Her control</p>
+        <h2 class="display-2" style="margin-top:18px;max-width:16ch;">Data, on her&nbsp;terms.</h2>
+        <p class="lede" style="margin-top:22px;max-width:44ch;">She decides what her circle knows, what we know, and what nobody knows. The default is nothing — support arrives without anything being taken from her.</p>
+
+        <ul class="data-list">
+          <li>
+            <span class="k">01</span>
+            <div>
+              <h4>She chooses what to share.</h4>
+              <p class="body-sm">Her circle sees exactly what she selects — a mood, a need, a simple "all fine". Nothing is shared by default, ever.</p>
+            </div>
+          </li>
+          <li>
+            <span class="k">02</span>
+            <div>
+              <h4>Sharing makes support personal.</h4>
+              <p class="body-sm">When she shares, what arrives gets better — warmer meals, later mornings, quieter visits. Small signals, gently used.</p>
+            </div>
+          </li>
+          <li>
+            <span class="k">03</span>
+            <div>
+              <h4>She stays in control.</h4>
+              <p class="body-sm">One tap pauses everything. No dark patterns, no guilt, no explaining herself to a dashboard.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal" style="--d:140ms">
+        <div class="panel">
+          <div class="panel-head">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <div class="panel-avatar">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Portrait of the recipient">
+              </div>
+              <div>
+                <p style="font-size:.9375rem;color:var(--ink);font-family:var(--serif);">Her circle can see</p>
+                <p style="font-size:.75rem;color:var(--muted);">Tap anything to change it</p>
+              </div>
+            </div>
+            <span class="eyebrow" style="font-size:.5625rem;">Private by default</span>
+          </div>
+
+          <div style="padding:6px 0 0;">
+            <div class="share-row">
+              <div>
+                <p>That she's resting</p>
+                <small>Shows a quiet "no visitors today"</small>
+              </div>
+              <button class="toggle" data-on="true" aria-pressed="true">Shared</button>
+            </div>
+            <div class="share-row">
+              <div>
+                <p>How the nights are going</p>
+                <small>Never seen by anyone outside her</small>
+              </div>
+              <button class="toggle" data-on="false" aria-pressed="false">Private</button>
+            </div>
+            <div class="share-row">
+              <div>
+                <p>What she needs this week</p>
+                <small>Meals, hands, sleep, or space</small>
+              </div>
+              <button class="toggle" data-on="true" aria-pressed="true">Shared</button>
+            </div>
+            <div class="share-row">
+              <div>
+                <p>Anything at all</p>
+                <small>Pauses the whole service</small>
+              </div>
+              <button class="toggle paused" data-on="false" aria-pressed="false">Paused</button>
+            </div>
+          </div>
+
+          <div class="panel-foot">
+            <span class="pulse-dot"></span>
+            <span>She can change this at any time — or pause everything with one tap.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARE BALANCE ============ -->
+<section class="sec care" id="care">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-plum">Care balance</p>
+        <h2 class="display-2" style="margin-top:18px;">What the circle gives becomes something she can actually feel.</h2>
+      </div>
+      <div class="reveal" style="--d:120ms">
+        <p class="lede">No dollar amounts, no ledgers, no scoreboards. Only the things that arrive — a night, a meal, a quiet house, a pair of hands.</p>
+      </div>
+    </div>
+
+    <div class="care-grid reveal">
+      <article class="care-card care-a">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD4SEJMdWNr5ITwsAvpe5ZNuoUZO7pQXQ3vhj-XxvZgPdv5WyzuNzSR_s8&s=10?auto=format&fit=crop&w=1200&q=80" alt="A clean, calm kitchen at home">
+        <div class="shade"></div>
+        <div class="txt">
+          <h4>The house, quietly reset.</h4>
+          <p>Someone comes while she's resting. She notices only that everything is easy again.</p>
+        </div>
+      </article>
+
+      <article class="care-card care-b">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80" alt="A warm, prepared meal on a table">
+        <div class="shade"></div>
+        <div class="txt">
+          <h4>Seven dinners, already made.</h4>
+          <p>Delivered in one quiet visit. Warm, generous, and entirely without a decision to make.</p>
+        </div>
+      </article>
+
+      <article class="care-card care-c">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80" alt="A dim, restful bedroom interior">
+        <div class="shade"></div>
+        <div class="txt">
+          <h4>One uninterrupted night.</h4>
+          <p>Six hours. Possibly the first since the birth.</p>
+        </div>
+      </article>
+
+      <article class="care-card care-c care-plum">
+        <div class="care-type">
+          <div class="ic">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M12 3v18M3 12h18" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Hands-on recovery care.</h4>
+          <p>A trained practitioner, at home, for her body — not the baby's.</p>
+        </div>
+      </article>
+
+      <article class="care-card care-c care-moss">
+        <div class="care-type">
+          <div class="ic">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="12" r="8.5"/>
+              <path d="M12 7.5V12l3 2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>A morning that belongs to her.</h4>
+          <p>Three hours, held open, with nothing required of her at all.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="care-note reveal">
+      <div class="dash"></div>
+      <p>Your circle contributes care, not currency. We translate it silently.</p>
+      <div class="dash"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGES ============ -->
+<section class="sec" id="packages">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-plum">The packages</p>
+        <h2 class="display-2" style="margin-top:18px;">Choose the length of the quiet.</h2>
+      </div>
+      <div class="reveal" style="--d:120ms">
+        <p class="lede">Every package can be reshaped after it arrives. Nothing here is fixed — including the things we've written down.</p>
+      </div>
+    </div>
+
+    <div class="pkg-grid">
+
+      <!-- PACKAGE 1 -->
+      <article class="pkg reveal">
+        <h3>The Quiet Week</h3>
+        <p class="pkg-sub">For the first seven days at home, when everything is loudest.</p>
+        <div class="pkg-price">£180<small>one-time gift</small></div>
+        <ul class="pkg-feats">
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#6E7A5A" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>A wrapped object delivered in 48 hours</li>
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#6E7A5A" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>Five prepared meals</li>
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#6E7A5A" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>One home reset</li>
+        </ul>
+        <button class="pkg-toggle" data-pkg-toggle aria-expanded="false" aria-controls="pkgd1">
+          What's included <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 1l5 5 5-5"/></svg>
+        </button>
+        <div class="expand" id="pkgd1"><div>
+          <div class="pkg-detail">
+            <h5>Inclusions</h5>
+            <ul class="pkg-list">
+              <li>A linen and ceramic gift set, wrapped by hand</li>
+              <li>Five chef-prepared meals, delivered chilled on day two</li>
+              <li>One two-hour home reset by a vetted housekeeper</li>
+              <li>A written introduction from her care coordinator</li>
+              <li>Access to the First Week Check journal</li>
+            </ul>
+            <h5>Flexibility</h5>
+            <ul class="pkg-list">
+              <li>Cancel any single arrival without explanation</li>
+              <li>Push the whole week back by up to 30 days</li>
+            </ul>
+            <h5>What she can change after receiving it</h5>
+            <ul class="pkg-list">
+              <li>Swap every meal for dietary needs or preferences</li>
+              <li>Move the home reset to any day she prefers</li>
+              <li>Replace the gift object for an alternative from our library</li>
+            </ul>
+          </div>
+        </div></div>
+      </article>
+
+      <!-- PACKAGE 2 (featured) -->
+      <article class="pkg featured reveal" style="--d:120ms">
+        <span class="pkg-badge">Most chosen</span>
+        <h3>The First Forty</h3>
+        <p class="pkg-sub">Six weeks of gentle, continuous cover — the recovery window that matters most.</p>
+        <div class="pkg-price">£520<small>one-time gift</small></div>
+        <ul class="pkg-feats">
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#8B9873" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>Everything in The Quiet Week</li>
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#8B9873" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>Night care, twice weekly</li>
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#8B9873" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>A dedicated care coordinator</li>
+        </ul>
+        <button class="pkg-toggle" data-pkg-toggle aria-expanded="false" aria-controls="pkgd2">
+          What's included <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 1l5 5 5-5"/></svg>
+        </button>
+        <div class="expand" id="pkgd2"><div>
+          <div class="pkg-detail">
+            <h5>Inclusions</h5>
+            <ul class="pkg-list">
+              <li>Everything in The Quiet Week, extended across six weeks</li>
+              <li>Twice-weekly night care so she can sleep through</li>
+              <li>Weekly recovery session at home — physio, massage or both</li>
+              <li>A named care coordinator, reachable by message only</li>
+              <li>Circle updates she chooses to send, drafted for her</li>
+              <li>Two further deliveries, timed to how she's actually doing</li>
+            </ul>
+            <h5>Flexibility</h5>
+            <ul class="pkg-list">
+              <li>Pause for a week and resume — no notice needed</li>
+              <li>Reroute any arrival to a different address once</li>
+              <li>Swap the coordinator if the fit isn't right</li>
+            </ul>
+            <h5>What she can change after receiving it</h5>
+            <ul class="pkg-list">
+              <li>Turn night care up or down, week by week</li>
+              <li>Choose which sessions she wants and skip the rest</li>
+              <li>Decide exactly what her circle is told — including nothing</li>
+              <li>Extend the six weeks into The Long Circle at any point</li>
+            </ul>
+          </div>
+        </div></div>
+        <p class="feat-note">Most chosen because the first six weeks are where support actually changes the outcome.</p>
+      </article>
+
+      <!-- PACKAGE 3 -->
+      <article class="pkg reveal" style="--d:240ms">
+        <h3>The Long Circle</h3>
+        <p class="pkg-sub">Six months, paced slowly — for the months nobody talks about.</p>
+        <div class="pkg-price">£1,480<small>one-time gift</small></div>
+        <ul class="pkg-feats">
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#6E7A5A" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>Everything in The First Forty</li>
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#6E7A5A" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>Monthly expert sessions</li>
+          <li><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#6E7A5A" stroke-width="1.4"><path d="M2 7.4l3.2 3.1L12 3.6" stroke-linecap="round"/></svg>Ongoing home support</li>
+        </ul>
+        <button class="pkg-toggle" data-pkg-toggle aria-expanded="false" aria-controls="pkgd3">
+          What's included <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 1l5 5 5-5"/></svg>
+        </button>
+        <div class="expand" id="pkgd3"><div>
+          <div class="pkg-detail">
+            <h5>Inclusions</h5>
+            <ul class="pkg-list">
+              <li>Everything in The First Forty, carried through six months</li>
+              <li>Monthly sessions with a sleep specialist, physio or therapist</li>
+              <li>Bi-weekly home support, adjusted as her needs change</li>
+              <li>Seasonal deliveries — an object for each chapter</li>
+              <li>Unlimited changes, pauses and reroutes</li>
+            </ul>
+            <h5>Flexibility</h5>
+            <ul class="pkg-list">
+              <li>Restructure the whole thing at month three</li>
+              <li>Transfer unused months to another mother</li>
+            </ul>
+            <h5>What she can change after receiving it</h5>
+            <ul class="pkg-list">
+              <li>Every single inclusion — no questions, no forms</li>
+              <li>The pace: denser support now, lighter later, or the reverse</li>
+              <li>Who is told about it, and what they're told</li>
+            </ul>
+          </div>
+        </div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIRST WEEK CHECK TEASER ============ -->
+<section class="sec" id="firstweek">
+  <div class="wrap">
+    <div class="fwk-teaser reveal">
+      <div class="fwk-media">
+        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1400&q=80"
+             alt="A calm, softly lit interior with warm neutral tones">
+      </div>
+      <div class="fwk-body">
+        <p class="eyebrow eyebrow-moss">Editorial — free with every gift</p>
+        <h2 class="display-2" style="margin-top:16px;max-width:14ch;">The First Week Check</h2>
+        <p class="lede" style="margin-top:18px;max-width:42ch;">A quiet, practical read for the seven days after coming home. Written by midwives, edited by mothers, free of anything that sounds like a lecture.</p>
+
+        <div class="fwk-cards">
+          <div class="fwk-mini">
+            <h4>Sleep, honestly</h4>
+            <p>What the first nights really look like, and the one change that helps most.</p>
+          </div>
+          <div class="fwk-mini">
+            <h4>Eating when you can't</h4>
+            <p>Five things that work one-handed, warm, and take under four minutes.</p>
+          </div>
+          <div class="fwk-mini">
+            <h4>Asking without apologising</h4>
+            <p>Exact words for accepting help — and for declining it kindly.</p>
+          </div>
+          <div class="fwk-mini">
+            <h4>Visitors, gently handled</h4>
+            <p>A short script she can send, so nobody has to be managed in person.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:34px;">
+          <button class="link-u" data-open-fwk>
+            Read the First Week Check
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 5h11M8.5 1.5L12 5l-3.5 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="sec trust" id="trust">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:56px;">
+      <div class="reveal">
+        <p class="eyebrow" style="color:rgba(248,245,240,.5);">From the other side</p>
+        <h2 class="display-2" style="color:#fff;margin-top:18px;max-width:18ch;">Givers who wanted to do something that actually landed.</h2>
+      </div>
+    </div>
+
+    <div class="quote-grid">
+      <div class="quote reveal">
+        <p>“I wanted to send something that wasn't a card and a hamper. She texted me on day nine to say she'd slept six hours. That was the whole gift.”</p>
+        <p class="who">Priya — sent The First Forty for her sister</p>
+      </div>
+      <div class="quote reveal" style="--d:120ms">
+        <p>“She never had to ask me for anything, which is exactly what she needed. I didn't realise how much of a gift that was until later.”</p>
+        <p class="who">Marcus — sent The Long Circle for his partner</p>
+      </div>
+      <div class="quote reveal" style="--d:240ms">
+        <p>“I'm a midwife. This is the first service I've recommended that doesn't treat her like a patient or a project.”</p>
+        <p class="who">Dr. Eleanor Voss — consultant midwife, London</p>
+      </div>
+    </div>
+
+    <div class="stat-row reveal">
+      <div class="stat"><b>4,100+</b><span>Gifts sent since 2021</span></div>
+      <div class="stat"><b>94%</b><span>Say the first week felt lighter</span></div>
+      <div class="stat"><b>12 months</b><span>Every gift stays changeable</span></div>
+      <div class="stat"><b>0</b><span>Details shared without consent</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-plum">Questions</p>
+        <h2 class="display-2" style="margin-top:18px;max-width:12ch;">The things people ask before sending.</h2>
+        <p class="body-sm" style="margin-top:22px;max-width:34ch;">Can't find it? Write to us and a real person will answer within the day.</p>
+        <div style="margin-top:26px;">
+          <a href="#contact" class="link-u">Talk to the studio
+            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1 5h11M8.5 1.5L12 5l-3.5 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal" style="--d:120ms;">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Does she know it came from me?</span>
+            <span class="pm" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div><p>Yes — your message is the first thing she reads, and it stays with the gift. Everything that follows simply arrives as care. She is never asked to thank anyone twice, and your circle is never shown any of her private information.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What if she already has everything she needs?</span>
+            <span class="pm" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div><p>Then the support shifts to time instead of things: a night of sleep, a morning off, a home reset. Most mothers have plenty of objects by week two and almost no uninterrupted rest. That's where the gift goes.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Can she change what arrives?</span>
+            <span class="pm" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div><p>Every inclusion, every timing, every meal. She can also pause the whole service with one tap and resume whenever she likes. Nothing is locked, and no explanation is ever requested.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Is this medical care?</span>
+            <span class="pm" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div><p>No. Our practitioners are trained and insured wellness professionals, not clinicians, and we don't diagnose or treat. Where clinical care is needed we point towards it — we simply make the everyday parts of recovery easier.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How does she control her information?</span>
+            <span class="pm" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div><p>She decides, row by row, what her circle can see. The default is nothing at all. We never share her data with the giver, with advertisers, or with anyone she hasn't chosen — and pausing everything takes one tap.</p></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What if the baby arrives early, or late?</span>
+            <span class="pm" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div><p>The gift waits. We hold it for up to twelve months from purchase and deliver within 48 hours of her coming home, whenever that happens to be. Nothing expires while she's in hospital.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:44px;">
+      <div class="reveal">
+        <p class="eyebrow eyebrow-plum">The studio</p>
+        <h2 class="display-2" style="margin-top:18px;">Come and see us, or just write.</h2>
+      </div>
+      <div class="reveal" style="--d:120ms">
+        <p class="lede">We're a small team in Shoreditch. Real people answer — usually within a few hours, always within the day.</p>
+      </div>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="contact-row">
+          <span class="ic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Studio</h4>
+            <p>12 Rivington Street<br>Shoreditch, London EC2A 3DU</p>
+            <p style="font-size:.8125rem;color:var(--muted);margin-top:6px;">By appointment, Tue–Thu</p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <span class="ic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <rect x="2.5" y="5" width="19" height="14"/><path d="M3 6.5l9 6.2 9-6.2"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:hello@mothersgift.co">hello@mothersgift.co</a></p>
+            <p style="font-size:.8125rem;color:var(--muted);margin-top:6px;">Someone reads every message</p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <span class="ic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M5 3.5h3l1.6 4-2 1.4a12 12 0 0 0 6.1 6.1l1.4-2 4 1.6v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 5.7 2 2 0 0 1 5 3.5z"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Telephone</h4>
+            <p><a href="tel:+442079460102">+44 20 7946 0102</a></p>
+            <p style="font-size:.8125rem;color:var(--muted);margin-top:6px;">Mon–Fri, 9am–6pm GMT</p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <span class="ic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Delivery</h4>
+            <p>Within 48 hours, UK-wide</p>
+            <p style="font-size:.8125rem;color:var(--muted);margin-top:6px;">Held for up to 12 months if needed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          title="Mother's Gift studio location, Shoreditch London"
+          src="https://maps.google.com/maps?q=Rivington%20Street%2C%20Shoreditch%2C%20London%20EC2A%203DU&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-chip">
+          <b>Mother's Gift Studio</b>
+          <span>12 Rivington Street, EC2A 3DU — 4 min from Old Street</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true" style="color:#fff;">
+            <path d="M16 4.2a11.8 11.8 0 0 0 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M16 4.2a11.8 11.8 0 0 1 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity=".32"/>
+            <circle cx="16" cy="16" r="3.1" fill="currentColor"/>
+          </svg>
+          <span class="brand-word">Mother's Gift</span>
+        </div>
+        <p class="sm">A gift that quietly becomes ongoing care. Sent once, felt for months.</p>
+
+        <div class="nl">
+          <input type="email" placeholder="Email for occasional letters" aria-label="Email address">
+          <button type="button">Join</button>
+        </div>
+        <p style="font-size:.75rem;color:rgba(248,245,240,.4);margin-top:12px;">One letter a season. Unsubscribe in one click.</p>
+      </div>
+
+      <div>
+        <h5>The gift</h5>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#care">Care balance</a></li>
+          <li><a href="#" data-open-flow>Begin a gift</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Her care</h5>
+        <ul>
+          <li><a href="#control">Her control</a></li>
+          <li><a href="#" data-open-fwk>First Week Check</a></li>
+          <li><a href="#faq">Questions</a></li>
+          <li><a href="#trust">Reviews</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Studio</h5>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Visit us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <p>© 2026 Mother's Gift Ltd. All rights reserved. Md. Mahbubur Rahman.</p>
+      <div class="foot-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOW OVERLAY ============ -->
+<div class="overlay" id="flow" role="dialog" aria-modal="true" aria-label="Send a gift">
+  <div class="ov-bar">
+    <div class="wrap" style="padding-left:0;padding-right:0;">
+      <div class="ov-bar-in">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" style="color:var(--ink);">
+            <path d="M16 4.2a11.8 11.8 0 0 0 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M16 4.2a11.8 11.8 0 0 1 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity=".32"/>
+            <circle cx="16" cy="16" r="3.1" fill="currentColor"/>
+          </svg>
+          <span class="brand-word" style="color:var(--ink);">Send the gift</span>
+        </div>
+        <button class="ov-close" data-close-flow>
+          Close
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l10 10M11 1L1 11"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="padding-top:0;padding-bottom:0;">
+    <div class="flow-layout">
+
+      <!-- ASIDE -->
+      <aside class="flow-aside" style="margin:0 -56px 0 0;padding-left:56px;">
+        <p class="eyebrow eyebrow-plum">Your gift</p>
+        <h3 class="display-3" style="margin-top:14px;">A gift that quietly becomes ongoing care.</h3>
+        <p class="body-sm" style="margin-top:16px;">Six short steps. Nothing is charged, nothing is final, and everything can be edited afterwards.</p>
+
+        <div class="sum">
+          <div class="sum-row"><span>For</span><b id="sumRecipient">—</b></div>
+          <div class="sum-row"><span>Package</span><b id="sumPackage">The First Forty</b></div>
+          <div class="sum-row"><span>Message</span><b id="sumMessage">—</b></div>
+          <div class="sum-row"><span>Arrives</span><b id="sumDelivery">—</b></div>
+          <div class="sum-row" style="border-bottom:0;"><span>Changeable</span><b>12 months</b></div>
+        </div>
+
+        <div style="margin-top:30px;padding:18px;background:rgba(110,122,90,.09);border-left:2px solid var(--moss);">
+          <p style="font-size:.8125rem;color:var(--ink2);line-height:1.6;">She can reshape or pause everything after it arrives. You'll never be asked to manage any of it.</p>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <div class="flow-main" id="flowBody">
+
+        <div class="prog" aria-hidden="true">
+          <span class="prog-dot" id="d0"></span>
+          <span class="prog-dot" id="d1"></span>
+          <span class="prog-dot" id="d2"></span>
+          <span class="prog-dot" id="d3"></span>
+          <span class="prog-dot" id="d4"></span>
+          <span class="prog-dot" id="d5"></span>
+        </div>
+        <div class="prog-labels" aria-hidden="true">
+          <span id="l0">Recipient</span>
+          <span id="l1">Package</span>
+          <span id="l2">Message</span>
+          <span id="l3">Delivery</span>
+          <span id="l4">Review</span>
+          <span id="l5">Confirm</span>
+        </div>
+
+        <!-- STEP 1 -->
+        <section class="flow-step active" data-step="0">
+          <p class="eyebrow eyebrow-plum">Step one of six</p>
+          <h2 class="display-2" style="margin-top:14px;max-width:16ch;">Who is this for?</h2>
+          <p class="lede" style="margin-top:16px;max-width:48ch;">She'll see her name on the message. Nobody else will see anything at all.</p>
+
+          <div style="margin-top:38px;">
+            <div class="field">
+              <label for="rName">Her first name</label>
+              <input class="inp" id="rName" type="text" placeholder="e.g. Amara" autocomplete="off">
+              <p class="err-msg" id="rNameErr">A first name is all we need.</p>
+            </div>
+
+            <div class="field">
+              <label>You are her</label>
+              <div class="chips" id="relationChips">
+                <button class="chip on" type="button">Sister</button>
+                <button class="chip" type="button">Friend</button>
+                <button class="chip" type="button">Partner</button>
+                <button class="chip" type="button">Mother</button>
+                <button class="chip" type="button">Colleague</button>
+                <button class="chip" type="button">Other</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="rWhen">When do you expect her home?</label>
+              <p class="hint">A rough guess is fine — we hold the gift for up to twelve months.</p>
+              <select class="sel" id="rWhen">
+                <option value="">Choose a window</option>
+                <option>She's already home</option>
+                <option>Due in the next 2 weeks</option>
+                <option>Due in 1–2 months</option>
+                <option>Due in 3+ months</option>
+                <option>Not sure yet — hold it for me</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flow-nav">
+            <button class="ov-close" data-close-flow style="border:0;">← Cancel</button>
+            <button class="btn btn-primary" data-next>Continue</button>
+          </div>
+        </section>
+
+        <!-- STEP 2 -->
+        <section class="flow-step" data-step="1">
+          <p class="eyebrow eyebrow-plum">Step two of six</p>
+          <h2 class="display-2" style="margin-top:14px;max-width:16ch;">How long should the quiet last?</h2>
+          <p class="lede" style="margin-top:16px;max-width:48ch;">Nothing is locked in. She can extend, shorten or pause at any point.</p>
+
+          <div class="pkg-pick" id="pkgPick" style="margin-top:38px;">
+            <button class="pick" type="button" data-pkg="quiet-week">
+              <div>
+                <h4>The Quiet Week</h4>
+                <p>Seven days of cover for the first week home.</p>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:14px;">
+                <span class="pr">£180</span>
+                <span class="radio"></span>
+              </div>
+            </button>
+
+            <button class="pick on" type="button" data-pkg="first-forty">
+              <div>
+                <h4>The First Forty <span style="font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;color:var(--moss);margin-left:8px;">Most chosen</span></h4>
+                <p>Six weeks of gentle, continuous cover.</p>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:14px;">
+                <span class="pr">£520</span>
+                <span class="radio"></span>
+              </div>
+            </button>
+
+            <button class="pick" type="button" data-pkg="long-circle">
+              <div>
+                <h4>The Long Circle</h4>
+                <p>Six months, paced slowly through the months nobody talks about.</p>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:14px;">
+                <span class="pr">£1,480</span>
+                <span class="radio"></span>
+              </div>
+            </button>
+          </div>
+
+          <p class="body-sm" style="margin-top:22px;">Every package can be reshaped after it arrives — including the inclusions we've written down.</p>
+
+          <div class="flow-nav">
+            <button class="btn btn-ghost" data-prev>Back</button>
+            <button class="btn btn-primary" data-next>Continue</button>
+          </div>
+        </section>
+
+        <!-- STEP 3 -->
+        <section class="flow-step" data-step="2">
+          <p class="eyebrow eyebrow-plum">Step three of six</p>
+          <h2 class="display-2" style="margin-top:14px;max-width:16ch;">Write the first thing she reads.</h2>
+          <p class="lede" style="margin-top:16px;max-width:48ch;">Short is better. She's tired — she'll read it twice.</p>
+
+          <div style="margin-top:38px;">
+            <div class="field">
+              <label for="mFrom">From</label>
+              <input class="inp" id="mFrom" type="text" placeholder="Your name">
+            </div>
+
+            <div class="field">
+              <label for="mText">Your message</label>
+              <p class="hint">Tap a line below to start, then make it yours.</p>
+              <div class="chips chips-plum" id="msgChips" style="margin-bottom:16px;">
+                <button class="chip" type="button" data-line="No need to reply. This is just here for you.">No need to reply…</button>
+                <button class="chip" type="button" data-line="I've arranged something for the weeks ahead. You don't have to do anything with it.">I've arranged something…</button>
+                <button class="chip" type="button" data-line="For the first forty days — and for you, not just the baby.">For the first forty days…</button>
+              </div>
+              <textarea class="area" id="mText" maxlength="240" placeholder="Write it the way you'd say it out loud."></textarea>
+              <p class="counter"><span id="mCount">0</span> / 240</p>
+            </div>
+
+            <div style="background:var(--paper2);border-left:2px solid var(--moss);padding:18px 20px;">
+              <p style="font-size:.8125rem;color:var(--ink2);line-height:1.65;">Your message is the only thing she'll know came from you. Everything after that simply arrives as care.</p>
+            </div>
+          </div>
+
+          <div class="flow-nav">
+            <button class="btn btn-ghost" data-prev>Back</button>
+            <button class="btn btn-primary" data-next>Continue</button>
+          </div>
+        </section>
+
+        <!-- STEP 4 -->
+        <section class="flow-step" data-step="3">
+          <p class="eyebrow eyebrow-plum">Step four of six</p>
+          <h2 class="display-2" style="margin-top:14px;max-width:16ch;">Where should it arrive?</h2>
+          <p class="lede" style="margin-top:16px;max-width:48ch;">The gift arrives beautifully wrapped and anonymous. Nothing on the outside suggests care, support, or anything else.</p>
+
+          <div style="margin-top:38px;">
+            <div class="field">
+              <label for="dStreet">Address</label>
+              <input class="inp" id="dStreet" type="text" placeholder="Street and number">
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr;gap:0;">
+              <div class="field">
+                <label for="dCity">City</label>
+                <input class="inp" id="dCity" type="text" placeholder="City">
+              </div>
+              <div class="field">
+                <label for="dPost">Postcode</label>
+                <input class="inp" id="dPost" type="text" placeholder="EC2A 3DU">
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Preferred delivery window</label>
+              <div class="chips" id="windowChips">
+                <button class="chip on" type="button">Morning 8–12</button>
+                <button class="chip" type="button">Afternoon 12–5</button>
+                <button class="chip" type="button">Evening 5–8</button>
+                <button class="chip" type="button">Leave at the door</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-nav">
+            <button class="btn btn-ghost" data-prev>Back</button>
+            <button class="btn btn-primary" data-next>Review</button>
+          </div>
+        </section>
+
+        <!-- STEP 5 -->
+        <section class="flow-step" data-step="4">
+          <p class="eyebrow eyebrow-plum">Step five of six</p>
+          <h2 class="display-2" style="margin-top:14px;max-width:16ch;">One last look.</h2>
+          <p class="lede" style="margin-top:16px;max-width:48ch;">Edit anything now, or afterwards — both are fine.</p>
+
+          <div class="review-block" id="reviewBlock" style="margin-top:38px;"></div>
+
+          <div style="background:var(--paper2);padding:20px;border-left:2px solid var(--clay);">
+            <p style="font-size:.8125rem;color:var(--ink2);line-height:1.65;">By continuing you'll place a hold, not a payment. You can change or cancel for 24 hours with no reason given.</p>
+          </div>
+
+          <div class="flow-nav">
+            <button class="btn btn-ghost" data-prev>Back</button>
+            <button class="btn btn-plum" data-next>Confirm the gift</button>
+          </div>
+        </section>
+
+        <!-- STEP 6 -->
+        <section class="flow-step" data-step="5">
+          <div class="confirm-mark">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+              <path d="M4 12.6l5.2 5L20 6.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="eyebrow eyebrow-moss">Confirmation</p>
+          <h2 class="display-2" style="margin-top:14px;max-width:18ch;">Your gift is arranged, <span id="confName">—</span>.</h2>
+          <p class="lede" style="margin-top:18px;max-width:48ch;">Nothing else is needed from you. From here, the quiet part begins.</p>
+
+          <div class="review-block" id="confBlock" style="margin-top:34px;"></div>
+
+          <ul class="next-steps">
+            <li>
+              <span class="k">01</span>
+              <div>
+                <h4>Within the hour</h4>
+                <p>A confirmation lands in your inbox, along with your reference and a single link to edit anything.</p>
+              </div>
+            </li>
+            <li>
+              <span class="k">02</span>
+              <div>
+                <h4>Within 48 hours of her coming home</h4>
+                <p>The gift arrives, wrapped and anonymous, carrying your message on the first card she reads.</p>
+              </div>
+            </li>
+            <li>
+              <span class="k">03</span>
+              <div>
+                <h4>Then, quietly</h4>
+                <p>Support begins on her terms. You'll never be asked to manage it, and you'll never see her private information.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="flow-nav">
+            <button class="btn btn-ghost" data-prev>Back to review</button>
+            <button class="btn btn-primary" data-close-flow>Done</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FIRST WEEK CHECK OVERLAY ============ -->
+<div class="overlay" id="fwk" role="dialog" aria-modal="true" aria-label="The First Week Check">
+  <div class="ov-bar">
+    <div class="wrap">
+      <div class="ov-bar-in">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" style="color:var(--ink);">
+            <path d="M16 4.2a11.8 11.8 0 0 0 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M16 4.2a11.8 11.8 0 0 1 0 23.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity=".32"/>
+            <circle cx="16" cy="16" r="3.1" fill="currentColor"/>
+          </svg>
+          <span class="brand-word" style="color:var(--ink);">The First Week Check</span>
+        </div>
+        <button class="ov-close" data-close-fwk>
+          Close
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l10 10M11 1L1 11"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="fwk-hero">
+    <img src="https://www.goldentriangletampa.com/thoughtful-gift-ideas-for-your-adult-children?auto=format&fit=crop&w=2000&q=80"
+         alt="A mother holding her child in soft window light">
+    <div class="sc"></div>
+    <div class="wrap fwk-hero-in">
+      <p class="eyebrow" style="color:rgba(255,255,255,.7);">Editorial · Seven days</p>
+      <h1 class="display-1" style="margin-top:16px;">The First Week Check</h1>
+      <p class="lede">A quiet, practical read for the days after coming home. Written by midwives, edited by mothers, and mercifully short.</p>
+    </div>
+  </header>
+
+  <div class="wrap fwk-body-wrap">
+    <div class="fwk-article">
+
+      <nav class="fwk-toc">
+        <h5>In this issue</h5>
+        <a href="#f1">Sleep, honestly</a>
+        <a href="#f2">Eating when you can't</a>
+        <a href="#f3">Asking without apologising</a>
+        <a href="#f4">Visitors, gently handled</a>
+        <a href="#f5">Your body, week one</a>
+        <a href="#f6">The check-in list</a>
+      </nav>
+
+      <div>
+        <article class="fwk-block" id="f1">
+          <p class="eyebrow eyebrow-moss">01 — Sleep</p>
+          <h2 class="display-2" style="margin-top:14px;">Sleep, honestly.</h2>
+          <p class="lead">Nobody sleeps in the first week. The goal isn't eight hours — it's one uninterrupted stretch, however short, and it changes almost everything.</p>
+          <p>A single four-hour block does more for recovery than six broken ones. If someone offers to take a night feed, the answer is yes — not because you can't, but because the arithmetic is on your side.</p>
+
+          <div class="fwk-cards2">
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80" alt="A dim, restful bedroom"></div>
+              <div class="bd">
+                <h4>The four-hour rule</h4>
+                <p>Protect one four-hour stretch. Anything less than three is a nap, not sleep, and won't reset you.</p>
+                <span class="tagline">Practical</span>
+              </div>
+            </div>
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1000&q=80" alt="A warm cup on a table"></div>
+              <div class="bd">
+                <h4>Daylight beats caffeine</h4>
+                <p>Ten minutes outside before noon shifts your rhythm more reliably than a second coffee.</p>
+                <span class="tagline">Gentle</span>
+              </div>
+            </div>
+          </div>
+
+          <blockquote class="pullquote">“You are not failing at sleep. You are recovering from birth while running a night shift.”</blockquote>
+        </article>
+
+        <article class="fwk-block" id="f2">
+          <p class="eyebrow eyebrow-moss">02 — Eating</p>
+          <h2 class="display-2" style="margin-top:14px;">Eating when you can't.</h2>
+          <p class="lead">Warm, one-handed, under four minutes. That's the whole brief. Anything that requires a plate and a table is a project right now.</p>
+
+          <div class="fwk-cards2">
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80" alt="A prepared, nourishing meal"></div>
+              <div class="bd">
+                <h4>Broth with a spoon of rice</h4>
+                <p>Warm, hydrating, and almost impossible to spill on a baby.</p>
+                <span class="tagline">Two minutes</span>
+              </div>
+            </div>
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=80" alt="A calm kitchen counter"></div>
+              <div class="bd">
+                <h4>Keep one plate at counter height</h4>
+                <p>A bowl of fruit and nuts at arm's length gets eaten. Anything in a cupboard doesn't.</p>
+                <span class="tagline">Set-up</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="fwk-block" id="f3">
+          <p class="eyebrow eyebrow-moss">03 — Asking</p>
+          <h2 class="display-2" style="margin-top:14px;">Asking without apologising.</h2>
+          <p class="lead">People want to help and mostly don't know how. Specific requests are kinder than vague ones — to them as much as to you.</p>
+
+          <ul class="checklist">
+            <li>“Could you take her for an hour at 7am on Thursday?”</li>
+            <li>“Can you bring dinner on Tuesday, in a dish I don't have to return?”</li>
+            <li>“I'd love it if you came and did the washing up and said nothing.”</li>
+            <li>“Not this week — can I come back to you in ten days?”</li>
+          </ul>
+
+          <p>Declining is not a failure of gratitude. It's information, and people handle it far better than they handle silence.</p>
+        </article>
+
+        <article class="fwk-block" id="f4">
+          <p class="eyebrow eyebrow-moss">04 — Visitors</p>
+          <h2 class="display-2" style="margin-top:14px;">Visitors, gently handled.</h2>
+          <p class="lead">One short message sent before anyone arrives prevents ten awkward conversations at the door.</p>
+
+          <div class="fwk-cards2">
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=80" alt="A calm living room ready for guests"></div>
+              <div class="bd">
+                <h4>A message you can copy</h4>
+                <p>“We'd love to see you. Half an hour, no gifts, and please don't ring the bell.”</p>
+                <span class="tagline">Script</span>
+              </div>
+            </div>
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1000&q=80" alt="A quiet, softly lit interior"></div>
+              <div class="bd">
+                <h4>One window, not a weekend</h4>
+                <p>Give one clear window a week. Everyone relaxes when the visit has an end.</p>
+                <span class="tagline">Boundaries</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="fwk-block" id="f5">
+          <p class="eyebrow eyebrow-moss">05 — Recovery</p>
+          <h2 class="display-2" style="margin-top:14px;">Your body, week one.</h2>
+          <p class="lead">Nothing here is a warning — only a note on what's usual, so you're not surprised by your own body.</p>
+          <p>Bleeding that gradually lightens, afterpains that sharpen during feeds, night sweats around day four, and a wave of emotion around day five are all ordinary. Anything that feels wrong to you is worth a call, regardless of what a leaflet says.</p>
+
+          <blockquote class="pullquote">“Trust the person having the experience. That's you.”</blockquote>
+        </article>
+
+        <article class="fwk-block" id="f6" style="margin-bottom:0;">
+          <p class="eyebrow eyebrow-moss">06 — The check-in</p>
+          <h2 class="display-2" style="margin-top:14px;">The check-in list.</h2>
+          <p class="lead">Six questions worth asking yourself, once a day, in the same order. Ten seconds, no writing required.</p>
+
+          <div class="fwk-cards2">
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1000&q=80" alt="A warm cup and quiet table"></div>
+              <div class="bd">
+                <h4>The list</h4>
+                <p>Have I eaten something warm? Have I had four hours? Have I been outside? Have I said no to one thing? Have I been touched kindly? Have I asked for one thing?</p>
+                <span class="tagline">Ten seconds</span>
+              </div>
+            </div>
+            <div class="fcard">
+              <div class="im"><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=1000&q=80" alt="A mother resting with her newborn"></div>
+              <div class="bd">
+                <h4>If two answers are no</h4>
+                <p>Then something should change today, not next week. That's what the circle is for.</p>
+                <span class="tagline">Act on it</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:44px;padding-top:32px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+            <p class="body-sm" style="max-width:40ch;margin:0;">This issue is free with every gift. Yours lands in her inbox on day one, in plain, unmarked language.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button class="btn btn-ghost" data-close-fwk>Back to the site</button>
+              <button class="btn btn-plum" data-close-fwk data-open-flow>Send a gift</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- Header ---------- */
+  const hdr = document.getElementById('hdr');
+  function onScroll(){
+    if(window.scrollY > 40){ hdr.classList.add('solid'); }
+    else { hdr.classList.remove('solid'); }
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---------- Mobile nav ---------- */
+  const burger = document.getElementById('burger');
+  const mnav = document.getElementById('mnav');
+  burger.addEventListener('click', function(){
+    const open = mnav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('lock', open);
+  });
+  document.querySelectorAll('[data-mnav]').forEach(function(a){
+    a.addEventListener('click', function(){
+      mnav.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+      document.body.classList.remove('lock');
+    });
+  });
+
+  /* ---------- Reveal on scroll ---------- */
+  const io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* ---------- Package expand ---------- */
+  document.querySelectorAll('[data-pkg-toggle]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const target = document.getElementById(btn.getAttribute('aria-controls'));
+      const open = target.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.childNodes[0].nodeValue = open ? 'Close details ' : "What's included ";
+    });
+  });
+
+  /* ---------- FAQ ---------- */
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click', function(){
+      const item = q.parentElement;
+      const open = item.classList.toggle('open');
+      q.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+
+  /* ---------- Data toggles ---------- */
+  document.querySelectorAll('.toggle').forEach(function(t){
+    t.addEventListener('click', function(){
+      const on = t.getAttribute('data-on') === 'true';
+      const next = !on;
+      t.setAttribute('data-on', next ? 'true' : 'false');
+      t.setAttribute('aria-pressed', next ? 'true' : 'false');
+      t.textContent = next ? 'Shared' : (t.classList.contains('paused') ? 'Paused' : 'Private');
+      if(!next && t.classList.contains('paused')){ t.textContent = 'Paused'; }
+    });
+  });
+
+  /* ---------- Overlay helpers ---------- */
+  const flowOv = document.getElementById('flow');
+  const fwkOv  = document.getElementById('fwk');
+
+  function openOverlay(el){
+    el.classList.add('open');
+    document.body.classList.add('lock');
+    el.scrollTop = 0;
+  }
+  function closeOverlay(el){
+    el.classList.remove('open');
+    if(!flowOv.classList.contains('open') && !fwkOv.classList.contains('open')){
+      document.body.classList.remove('lock');
+    }
+  }
+
+  /* ---------- FLOW ---------- */
+  const flow = {
+    recipient: '',
+    relation: 'Sister',
+    when: '',
+    pkg: 'first-forty',
+    from: '',
+    msg: '',
+    street: '',
+    city: '',
+    post: '',
+    win: 'Morning 8–12'
+  };
+
+  const PKG = {
+    'quiet-week': { name:'The Quiet Week', price:'£180' },
+    'first-forty': { name:'The First Forty', price:'£520' },
+    'long-circle': { name:'The Long Circle', price:'£1,480' }
+  };
+
+  const steps = Array.prototype.slice.call(document.querySelectorAll('.flow-step'));
+  let cur = 0;
+
+  function renderProgress(){
+    for(let i=0;i<6;i++){
+      const d = document.getElementById('d'+i);
+      const l = document.getElementById('l'+i);
+      d.classList.toggle('done', i < cur);
+      d.classList.toggle('current', i === cur);
+      l.classList.toggle('on', i <= cur);
+    }
+  }
+
+  function showStep(i){
+    cur = Math.max(0, Math.min(steps.length-1, i));
+    steps.forEach(function(s, idx){ s.classList.toggle('active', idx === cur); });
+    renderProgress();
+    if(cur === 4){ renderReview('reviewBlock'); }
+    if(cur === 5){ renderReview('confBlock'); }
+    document.getElementById('flow').scrollTo({top:0, behavior:'smooth'});
+  }
+
+  function renderAside(){
+    document.getElementById('sumRecipient').textContent = flow.recipient || '—';
+    document.getElementById('sumPackage').textContent = PKG[flow.pkg].name;
+    document.getElementById('sumMessage').textContent = flow.msg ? (flow.msg.length > 42 ? flow.msg.slice(0,42)+'…' : flow.msg) : '—';
+    const del = [flow.post, flow.city].filter(Boolean).join(', ');
+    document.getElementById('sumDelivery').textContent = del ? (flow.win + ' · ' + del) : '—';
+  }
+
+  function esc(s){
+    return String(s||'').replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function renderReview(id){
+    const box = document.getElementById(id);
+    if(!box) return;
+    box.innerHTML =
+      '<div class="review-row"><span class="lbl2">Recipient</span><span class="val">' + (esc(flow.recipient) || 'Not set') + ' — ' + esc(flow.relation).toLowerCase() + '</span><button class="edit-btn" data-goto="0">Edit</button></div>' +
+      '<div class="review-row"><span class="lbl2">Arrival</span><span class="val">' + (esc(flow.when) || 'Held until she is home') + '</span><button class="edit-btn" data-goto="0">Edit</button></div>' +
+      '<div class="review-row"><span class="lbl2">Package</span><span class="val">' + PKG[flow.pkg].name + ' — ' + PKG[flow.pkg].price + '</span><button class="edit-btn" data-goto="1">Edit</button></div>' +
+      '<div class="review-row"><span class="lbl2">Message</span><span class="val">' + (flow.msg ? '“' + esc(flow.msg) + '”' : 'You can add one at any time') + '</span><button class="edit-btn" data-goto="2">Edit</button></div>' +
+      '<div class="review-row"><span class="lbl2">Delivery</span><span class="val">' + (esc(flow.street) || 'Not set') + (flow.city ? ', ' + esc(flow.city) : '') + (flow.post ? ' · ' + esc(flow.post) : '') + ' — ' + esc(flow.win) + '</span><button class="edit-btn" data-goto="3">Edit</button></div>' +
+      '<div class="review-row" style="background:var(--paper2);"><span class="lbl2">Changeable</span><span class="val">Every inclusion, for 12 months. She can pause everything with one tap.</span></div>';
+
+    box.querySelectorAll('[data-goto]').forEach(function(b){
+      b.addEventListener('click', function(){ showStep(parseInt(b.getAttribute('data-goto'),10)); });
+    });
+  }
+
+  /* Step 1 — recipient */
+  const rName = document.getElementById('rName');
+  document.getElementById('relationChips').addEventListener('click', function(e){
+    const c = e.target.closest('.chip');
+    if(!c) return;
+    this.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('on'); });
+    c.classList.add('on');
+    flow.relation = c.textContent.trim();
+  });
+  document.getElementById('rWhen').addEventListener('change', function(){ flow.when = this.value; });
+
+  /* Step 2 — package */
+  document.getElementById('pkgPick').addEventListener('click', function(e){
+    const p = e.target.closest('.pick');
+    if(!p) return;
+    this.querySelectorAll('.pick').forEach(function(x){ x.classList.remove('on'); });
+    p.classList.add('on');
+    flow.pkg = p.getAttribute('data-pkg');
+    renderAside();
+  });
+
+  /* Step 3 — message */
+  const mText = document.getElementById('mText');
+  const mFrom = document.getElementById('mFrom');
+  const mCount = document.getElementById('mCount');
+  mFrom.addEventListener('input', function(){ flow.from = this.value; });
+  mText.addEventListener('input', function(){
+    flow.msg = this.value;
+    mCount.textContent = this.value.length;
+    renderAside();
+  });
+  document.getElementById('msgChips').addEventListener('click', function(e){
+    const c = e.target.closest('.chip');
+    if(!c) return;
+    mText.value = c.getAttribute('data-line');
+    flow.msg = mText.value;
+    mCount.textContent = flow.msg.length;
+    renderAside();
+    mText.focus();
+  });
+
+  /* Step 4 — delivery */
+  const dStreet = document.getElementById('dStreet');
+  const dCity = document.getElementById('dCity');
+  const dPost = document.getElementById('dPost');
+  dStreet.addEventListener('input', function(){ flow.street = this.value; renderAside(); });
+  dCity.addEventListener('input', function(){ flow.city = this.value; renderAside(); });
+  dPost.addEventListener('input', function(){ flow.post = this.value; renderAside(); });
+  document.getElementById('windowChips').addEventListener('click', function(e){
+    const c = e.target.closest('.chip');
+    if(!c) return;
+    this.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('on'); });
+    c.classList.add('on');
+    flow.win = c.textContent.trim();
+    renderAside();
+  });
+
+  /* Next / Back */
+  document.querySelectorAll('[data-next]').forEach(function(b){
+    b.addEventListener('click', function(){
+      if(cur === 0){
+        const name = rName.value.trim();
+        if(!name){
+          rName.classList.add('err');
+          document.getElementById('rNameErr').classList.add('show');
+          rName.focus();
+          return;
+        }
+        rName.classList.remove('err');
+        document.getElementById('rNameErr').classList.remove('show');
+        flow.recipient = name;
+      }
+      if(cur === 4){
+        document.getElementById('confName').textContent = flow.recipient || 'sent';
+      }
+      renderAside();
+      showStep(cur + 1);
+    });
+  });
+  document.querySelectorAll('[data-prev]').forEach(function(b){
+    b.addEventListener('click', function(){ showStep(cur - 1); });
+  });
+
+  /* ---------- Open / close wiring ---------- */
+  document.querySelectorAll('[data-open-flow]').forEach(function(b){
+    b.addEventListener('click', function(e){
+      e.preventDefault();
+      closeOverlay(fwkOv);
+      mnav.classList.remove('open');
+      document.body.classList.remove('lock');
+      renderAside();
+      showStep(0);
+      openOverlay(flowOv);
+    });
+  });
+  document.querySelectorAll('[data-close-flow]').forEach(function(b){
+    b.addEventListener('click', function(){ closeOverlay(flowOv); });
+  });
+  document.querySelectorAll('[data-open-fwk]').forEach(function(b){
+    b.addEventListener('click', function(e){
+      e.preventDefault();
+      closeOverlay(flowOv);
+      mnav.classList.remove('open');
+      document.body.classList.remove('lock');
+      openOverlay(fwkOv);
+    });
+  });
+  document.querySelectorAll('[data-close-fwk]').forEach(function(b){
+    b.addEventListener('click', function(){ closeOverlay(fwkOv); });
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      if(flowOv.classList.contains('open')) closeOverlay(flowOv);
+      if(fwkOv.classList.contains('open')) closeOverlay(fwkOv);
+      if(mnav.classList.contains('open')){
+        mnav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+        document.body.classList.remove('lock');
+      }
+    }
+  });
+
+  /* ---------- Init ---------- */
+  renderAside();
+  renderProgress();
+
+  /* ---------- Anchor nav within FWK overlay ---------- */
+  fwkOv.querySelectorAll('a[href^="#f"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      const t = document.getElementById(a.getAttribute('href').slice(1));
+      if(t) fwkOv.scrollTo({ top: t.offsetTop - 84, behavior:'smooth' });
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
